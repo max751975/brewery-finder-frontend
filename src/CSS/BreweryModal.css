@@ -1,0 +1,41 @@
+.BreweryModal-background {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(200, 200, 200); */
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BrweryModal-container {
+  width: 1000px;
+  max-height: 500px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.BreweryModal-title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+.BreweryModal-title-closeBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.BreweryModal-title-closeBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}

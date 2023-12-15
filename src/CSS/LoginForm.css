@@ -1,0 +1,11 @@
+.LoginForm-card {
+  background-color: antiquewhite;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.LoginForm-title {
+  color: antiquewhite;
+  margin: 2rem;
+}

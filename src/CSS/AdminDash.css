@@ -1,0 +1,38 @@
+.AdminDash-container {
+  /* background-color: bisque; */
+  /* max-width: 100%;
+  height: 91.8vh;
+  margin: 0 auto;
+  background-image: url("../images/brewery-print-shoppe-background-keg-beer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+h1 {
+  color: antiquewhite;
+}
+
+/* h2 {
+  color: rgb(7, 7, 7);
+} */
+
+.AdminDash-card {
+  max-width: 900px;
+  margin: 3rem auto;
+  /* background-color: rgba(244, 230, 175, 0.698); */
+  background-color: antiquewhite;
+  border-radius: 10px;
+  color: black;
+}
+
+.AdminDash-card ul li {
+  background-color: rgba(244, 230, 175, 0.496);
+  text-align: left;
+}
+.AdminDash-card ul li a {
+  color: black;
+}
+.AdminDash-card ul li a:hover {
+  color: rgba(0, 0, 0, 0.536);
+}

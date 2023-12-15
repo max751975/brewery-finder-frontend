@@ -1,0 +1,17 @@
+.UserPage-card {
+  max-width: 900px;
+  margin: 3rem auto;
+  background-color: rgba(244, 230, 175, 0.496);
+}
+.UserPage-list-group {
+  max-width: 100%;
+  text-align: left;
+}
+
+.UserPage-list-group li {
+  background-color: antiquewhite;
+}
+.card-img {
+  margin: 10px;
+  width: 15vw;
+}

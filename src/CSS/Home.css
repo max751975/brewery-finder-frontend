@@ -1,0 +1,37 @@
+.Home-finder-container {
+  /* background-color: antiquewhite; */
+  background: linear-gradient(
+    to top,
+    rgb(238, 220, 192) 0%,
+    rgb(222, 201, 167) 62%
+  );
+  max-width: 900px;
+  /* max-height: 70vh; */
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+}
+
+.Home-table-container {
+  max-height: 30vh;
+  overflow-y: auto;
+}
+
+.Home-links {
+  /* background-color: rgb(143, 116, 81); */
+  background: linear-gradient(
+    to bottom,
+    rgb(213, 206, 166) 0%,
+    rgb(183, 173, 112) 49%
+  );
+  width: 50%;
+  max-height: 20vh;
+  padding: 1rem;
+  font-size: 1.15rem;
+  border-radius: 10px;
+}
+
+.Home-form-control {
+  width: 60%;
+  margin: 1rem auto;
+}

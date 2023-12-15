@@ -1,0 +1,13 @@
+.Profile-card {
+  max-width: 900px;
+  margin: 2em auto;
+  background-color: antiquewhite;
+}
+.Profile-list-group {
+  align-items: start;
+}
+.Profile-list-group li {
+  background-color: antiquewhite;
+  width: 100%;
+  text-align: start;
+}

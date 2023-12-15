@@ -1,0 +1,14 @@
+.BreweryDetail-card {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: antiquewhite;
+}
+.BreweryDetail-list-group {
+  align-items: start;
+}
+
+.BreweryDetail-list-group li {
+  background-color: antiquewhite;
+  width: 100%;
+  text-align: start;
+}

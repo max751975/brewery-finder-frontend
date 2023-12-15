@@ -1,0 +1,11 @@
+.BreweriesList-container {
+  margin: 1em auto;
+  padding: 0;
+  max-width: 900px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+.BreweriesList-title {
+  color: antiquewhite;
+}
