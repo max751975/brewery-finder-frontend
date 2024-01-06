@@ -10,18 +10,18 @@ const UserPage = () => {
   const navigate = useNavigate();
   const [data, setData] = useState(null);
 
-  const findBreweries = async (location) => {
-    alert(`Looking for breweries around ${location}`);
-    try {
-      const response = await axios.get(
-        "https://api.openbrewerydb.org/v1/breweries?by_postal=44107&per_page=3"
-      );
-      setData(response);
-      console.log(response);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const findBreweries = async (location) => {
+  //   alert(`Looking for breweries around ${location}`);
+  //   try {
+  //     const response = await axios.get(
+  //       "https://api.openbrewerydb.org/v1/breweries?by_postal=44107&per_page=3"
+  //     );
+  //     setData(response);
+  //     console.log(response);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
   return (
     <>

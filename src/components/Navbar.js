@@ -1,12 +1,11 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import useAuth from "../hooks/useAuth";
 import "../CSS/Navbar.css";
 
 const Navbar = () => {
   const { auth, setAuth } = useAuth();
-  const navigate = useNavigate();
 
   return (
     <nav className="Navbar-navbar navbar sticky-top navbar-expand-lg">
@@ -51,7 +50,6 @@ const Navbar = () => {
                   setAuth({});
                   localStorage.removeItem("user");
                   localStorage.removeItem("token");
-                  navigate("/");
                 }}
                 className="nav-link"
               >
