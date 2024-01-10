@@ -1,20 +1,20 @@
 import React from "react";
 import { render } from "@testing-library/react";
+import UpdateBrewery from "./UpdateBrewery";
 import { MemoryRouter } from "react-router-dom";
-import UserPage from "./UserPage";
 
-test("renders UserPage component without crashing", () => {
+test("renders UpdateBrewery component without crashing", () => {
   render(
     <MemoryRouter>
-      <UserPage />
+      <UpdateBrewery />
     </MemoryRouter>
   );
 });
 
-test("UserPage component matches snapshot", () => {
+test("UpdateBrewery component matches snapshot", () => {
   const { asFragment } = render(
     <MemoryRouter>
-      <UserPage />
+      <UpdateBrewery />
     </MemoryRouter>
   );
   expect(asFragment()).toMatchSnapshot();

@@ -18,7 +18,7 @@ function CreateBrewery() {
 
   const { auth } = useAuth();
   const NEW_USER_URL = "/users";
-  const TOKEN = auth.token;
+  const TOKEN = auth?.token;
   const initialState = {
     name: "",
     location: "",

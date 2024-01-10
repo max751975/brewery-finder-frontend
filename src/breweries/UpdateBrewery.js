@@ -32,7 +32,7 @@ function UpdateBrewery() {
   const nameRef = useRef();
 
   const END_POINT = `breweries/${breweryId}`;
-  const TOKEN = auth.token;
+  const TOKEN = auth?.token;
 
   console.log("Update brewery----------------------");
   console.log("Brewery id:", breweryId);
@@ -58,7 +58,7 @@ function UpdateBrewery() {
       }
     };
     getUserById();
-  }, [auth.token]);
+  }, [auth]);
 
   useEffect(() => {
     nameRef.current.focus();
@@ -109,9 +109,9 @@ function UpdateBrewery() {
               <div className="d-flex justify-content-end m-2">
                 <Link
                   to={
-                    auth.user.is_admin
+                    auth?.user.is_admin
                       ? "/breweries"
-                      : `/users/${auth.user.id}/breweries`
+                      : `/users/${auth?.user.id}/breweries`
                   }
                   className="btn btn-secondary btn-sm mt-2"
                 >

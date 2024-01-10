@@ -11,14 +11,14 @@ const BreweryDetail = () => {
   const navigate = useNavigate();
   const { breweryId } = useParams();
   const { auth } = useAuth();
-  const userId = auth.user.id;
+  const userId = auth?.user.id;
   console.debug("BreweryDetail", "breweryId = ", breweryId);
 
   const [brewery, setBrewery] = useState(null);
   const END_POINT = `/breweries/${breweryId}`;
   console.debug("END_POINT::::::::", END_POINT);
 
-  const TOKEN = auth.token;
+  const TOKEN = auth?.token;
   const config = {
     headers: {
       Authorization: `Bearer ${TOKEN}`,

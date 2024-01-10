@@ -16,13 +16,13 @@ const Home = () => {
   const [currentBrewery, setCurrentBrewery] = useState(null);
   const [didFind, setDidFind] = useState(false);
 
-  const user = JSON.parse(localStorage.getItem("user"));
-  const token = JSON.parse(localStorage.getItem("token"));
+  // const user = JSON.parse(localStorage.getItem("user"));
+  // const token = JSON.parse(localStorage.getItem("token"));
 
-  useEffect(() => {
-    setAuth({ user, token });
-  }, []);
-  console.log("Home::::::::::: auth:", auth);
+  // useEffect(() => {
+  //   setAuth({ user, token });
+  // }, []);
+  // console.log("Home::::::::::: auth:", auth);
 
   useEffect(() => {
     if (auth?.user) {

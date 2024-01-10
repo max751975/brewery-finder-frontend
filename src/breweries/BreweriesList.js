@@ -16,14 +16,14 @@ const BrweriesList = () => {
   const [breweries, setBreweries] = useState();
   const { auth } = useAuth();
   const navigate = useNavigate();
-  console.log(
-    "From BreweriesList---------------------------------------------"
-  );
-  console.log("auth::::::::::::::::::::::::::: ", auth);
-  console.log("-------------------------------------------------------------");
+  // console.log(
+  //   "From BreweriesList---------------------------------------------"
+  // );
+  // console.log("auth::::::::::::::::::::::::::: ", auth);
+  // console.log("-------------------------------------------------------------");
   const END_POINT = `/breweries`;
-  const TOKEN = auth.token;
-  console.log(END_POINT);
+  const TOKEN = auth?.token;
+  // console.log(END_POINT);
 
   const config = {
     headers: {
@@ -41,16 +41,16 @@ const BrweriesList = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [auth]);
 
-  console.log("Breweries:::::::::::::::::::------------------", breweries);
+  // console.log("Breweries:::::::::::::::::::------------------", breweries);
 
-  const handleDelete = (e) => {
-    console.log("You are deleting brewery");
-    console.log(e);
-    console.log(e.target.parentElement);
-    console.log(e.target.parentElement.id);
-  };
+  // const handleDelete = (e) => {
+  //   console.log("You are deleting brewery");
+  //   console.log(e);
+  //   console.log(e.target.parentElement);
+  //   console.log(e.target.parentElement.id);
+  // };
 
   return (
     <>
